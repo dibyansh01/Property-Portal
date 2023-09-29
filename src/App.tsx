@@ -8,7 +8,10 @@ import { Home } from '@/Home';
 import { useLoginState } from "@/hooks/use-login-state";
 import { MyPropertyListing } from './myproperty';
 import { Signup } from './Signup';
-import {BASE_URL} from './config';
+
+
+const BASE_URL = import.meta.env.VITE_BASE_URL;
+
 
 
 

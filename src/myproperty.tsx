@@ -4,7 +4,10 @@ import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
 import { Button, Card, Typography } from "@mui/material";
 import Divider from '@mui/material/Divider';
-import {BASE_URL} from './config';
+
+
+
+const BASE_URL = import.meta.env.VITE_BASE_URL;
 
 interface Property {
   _id: string;
