@@ -9,7 +9,8 @@ import { useLoginState } from "@/hooks/use-login-state";
 
 
 // const BASE_URL = import.meta.env.VITE_BASE_URL;
-const BASE_URL = process.env.VITE_BASE_URL
+// const BASE_URL = process.env.VITE_BASE_URL
+const BASE_URL = "http://ec2-18-212-116-46.compute-1.amazonaws.com:3000/admin"
 
 
 export function Signin(){

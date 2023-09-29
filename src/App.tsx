@@ -10,8 +10,8 @@ import { MyPropertyListing } from './myproperty';
 import { Signup } from './Signup';
 
 
-// const BASE_URL = import.meta.env.VITE_BASE_URL;
-const BASE_URL = process.env.VITE_BASE_URL
+const BASE_URL = import.meta.env.VITE_BASE_URL;
+// const BASE_URL = process.env.VITE_BASE_URL
 
 
 
