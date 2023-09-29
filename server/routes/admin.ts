@@ -3,10 +3,24 @@ import { Admin, Property } from "../db";
 import jwt from "jsonwebtoken";
 import { SECRET } from "../middleware/auth";
 import { authenticateJwt } from "../middleware/auth";
+import cors from "cors";
 
+interface CorsOptionsWithHeaders {
+  origin?: string;
+  methods: string[];
+  headers: string[];
+}
 
 
 const router = express.Router();
+
+const corsOptions: CorsOptionsWithHeaders = {
+  origin: '*',
+  methods: ['GET', 'POST', 'PUT', 'DELETE'],
+  headers: ['Content-Type', 'Authorization'],
+};
+
+router.use(cors(corsOptions));
 
 router.get("/me", authenticateJwt, async (req, res) => {
   const user: any = req.headers["user"];
