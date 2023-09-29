@@ -3,8 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { useLoginState } from "@/hooks/use-login-state";
 
 export function Appbar({
-    className,
-    ...props
+    
 }: React.HTMLAttributes<HTMLElement>) {
     const navigate = useNavigate();
     const loginstate = useLoginState();
