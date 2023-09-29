@@ -8,7 +8,8 @@ import { useLoginState } from "@/hooks/use-login-state";
 
 
 
-const BASE_URL = import.meta.env.VITE_BASE_URL;
+// const BASE_URL = import.meta.env.VITE_BASE_URL;
+const BASE_URL = process.env.VITE_BASE_URL
 
 
 
