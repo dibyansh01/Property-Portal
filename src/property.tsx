@@ -46,12 +46,12 @@ const PropertyListing: React.FC = () => {
     setFilter((prevFilter) => ({ ...prevFilter, [key]: value }));
   };
 
-  const handleApplyFilters = () => {
-    // Fetching filtered properties when Apply is clicked
-    axios.get(`${BASE_URL}/list-filter-property`, { params: filter }).then((response) => {
-      setProperties(response.data.properties);
-    });
-  };
+  // const handleApplyFilters = () => {
+  //   // Fetching filtered properties when Apply is clicked
+  //   axios.get(`${BASE_URL}/list-filter-property`, { params: filter }).then((response) => {
+  //     setProperties(response.data.properties);
+  //   });
+  // };
 
   return (
     <div className=" mx-auto md:mx-20 p-4">
