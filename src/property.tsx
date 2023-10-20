@@ -31,7 +31,7 @@ const PropertyListing: React.FC = () => {
     city: '',
     availableFrom: null,
     showPriceRange: false,
-    price: { min: 0, max: 10000000 },
+    price: { min: 0, max: 100000000 },
     propertyType: '',
   });
 
@@ -54,11 +54,11 @@ const PropertyListing: React.FC = () => {
   };
 
   return (
-    <div className=" mx-20 p-4">
+    <div className=" mx-auto md:mx-20 p-4">
       <h1 className="text-2xl font-bold mb-4">Property Listing Page</h1>
 
       {/* Filters */}
-      <div className="flex justify-between w-full bg-gray-200 py-4 px-2">
+      <div className="relative flex justify-between bg-gray-200 h-16 px-2">
             <div className="flex items-center">
                 <label className="text-gray-600 mx-2">city:</label>
                 <select
@@ -97,7 +97,7 @@ const PropertyListing: React.FC = () => {
                     <input
                         type="range"
                         min="0"
-                        max="10000000"
+                        max="1000000000"
                         value={filter.price.min}
                         onChange={(e) =>
                         handleFilterChange('price', { ...filter.price, min: parseInt(e.target.value) })
@@ -106,7 +106,7 @@ const PropertyListing: React.FC = () => {
                     <input
                         type="range"
                         min="0"
-                        max="10000"
+                        max="1000000000"
                         value={filter.price.max}
                         onChange={(e) =>
                         handleFilterChange('price', { ...filter.price, max: parseInt(e.target.value) })
@@ -137,21 +137,21 @@ const PropertyListing: React.FC = () => {
             </div>
 
             {/* Apply Button */}
-            <div className="flex items-center ">
+            {/* <div className="flex items-center ">
                 <button
                 className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded mx-16 ml-16"
                 onClick={handleApplyFilters}
                 >
                 Apply
                 </button>
-            </div>
+            </div> */}
       </div>
 
       {/* Property Listings */}
-      <div className="flex flex-wrap justify-center">
-        <h2 className="w-full text-xl font-semibold mb-2">Property Listings</h2>
+      <h2 className="w-full text-xl font-semibold mb-2 pt-2">Property Listings</h2>
+      <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
         {properties.map((property) => (
-          <div key={property._id} className="w-64 m-24 p-8">
+          <div key={property._id} className="mx-auto">
             {/* Displaying property details */}
               
             <Card

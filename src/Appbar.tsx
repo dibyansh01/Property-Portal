@@ -10,7 +10,7 @@ export function Appbar({
 
     if (!loginstate.isLogin){
     return (
-        <div className="w-full bg-gray-200 py-4 px-2">
+        <div className="relative px-4 sm:px-6 lg:px-8 flex h-16 bg-gray-200 items-center">
             <div className="flex justify-between w-full">
                 <div className="flex items-center">
                     <h2 className="text-xl font-bold mr-4">LOGO</h2>

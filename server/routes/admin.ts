@@ -43,10 +43,10 @@ router.post("/signup", async (req, res) => {
     } else {
       const newAdmin = new Admin({ username, password });
       await newAdmin.save();
-      const token = jwt.sign({ username, role: "user" }, SECRET, {
+      const token = jwt.sign({ username, role: "admin" }, SECRET, {
         expiresIn: "24h",
       });
-      res.json({ message: "Admin created successfully", token });
+      res.status(200).json({ message: "Admin created successfully", token });
     }
   } catch (error: any) {
     // Zod validation error
@@ -108,7 +108,7 @@ router.put("/property/:id", authenticateJwt, async (req, res) => {
     }
 
     // Check if the admin is the owner of the property
-    const adminId = admin._id; // Assuming user information is in headers
+    const adminId = admin._id; // Assuming admin information is in headers
     if (!property.addedBy.includes(adminId)) {
       return res
         .status(403)
