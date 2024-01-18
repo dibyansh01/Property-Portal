@@ -12,10 +12,10 @@ This is a real estate property-portal webapp.
 
 - [Features](#features)
 - [Technologies and Libraries Used](#technologies-and-libraries-used)
-- [Demo](#demo)
 - [Getting Started](#getting-started)
 - [Usage](#usage)
 - [Contributing](#contributing)
+- [Demo](#demo)
 - [License](#license)
 
 
@@ -46,17 +46,7 @@ The DsimplyAI platform offers a comprehensive set of features:
 - AWS
 - 
   and more...
-
   
-## Demo
-
-
-You can access the live demo of the DsimplyAI web app by following the link below:
-
-[Property-Portal](https://property-portal-rho.vercel.app/)
-
-Feel free to explore the features and functionality of the app. We welcome your feedback and suggestions.
-
 
 ## Getting Started
 
@@ -113,18 +103,23 @@ Thank you for considering contributing to Property-Portal! We welcome contributi
 - **Documentation**: If you find any issues with the documentation, or if you want to improve it, please submit a pull request with your changes.
 
 
-
-## License
-
-This project is licensed under the [MIT License](https://opensource.org/licenses/MIT) - see the [LICENSE](https://github.com/dibyansh01/Property-Portal/blob/main/LICENSE) file for details.
+## Demo
 
 
+You can access the live demo of the DsimplyAI web app by following the link below:
 
-# Link
-https://property-portal-rho.vercel.app/
+[Property-Portal](https://property-portal-rho.vercel.app/)
 
 - #**# Working**
 
 
 https://github.com/dibyansh01/Property-Portal/assets/129924389/47475652-1806-44a9-b950-1deb5e7b50b8
+
+
+Feel free to explore the features and functionality of the app. We welcome your feedback and suggestions.
+
+
+## License
+
+This project is licensed under the [MIT License](https://opensource.org/licenses/MIT) - see the [LICENSE](https://github.com/dibyansh01/Property-Portal/blob/main/LICENSE) file for details.
 
